@@ -24,10 +24,10 @@
 <script>
     $(document).ready(function () {
         $('#emptybtn').click(function () {
-            $('#box h2').empty();//empty data in targeted div
+            $('#box').empty();//empty only data in targeted div
         })
-        $('#emptybtn').click(function () {
-            $('#box').remove();//remove targeted div
+        $('#removebtn').click(function () {
+            $('#box').remove();//direct remove targeted div
         })
     });
 </script>
