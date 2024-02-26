@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<title>WrapAll & WrapInner Method</title>
+</head>
+<body>
+    <div class="container m-5">
+    <div class="container m-5">
+        <h1>WrapAll & WrapInner Method</h1>
+        <div id="box" class="border border-5 p-3 w-50 h-25 border-dark my-5 mx-3"> 
+            <h2 id="text">Test Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis harum unde adipisci nesciunt, est rerum.</p>
+        </div>
+        <button id="widthBtn" class="btn btn-primary">Width</button>
+        <button id="heightBtn" class="btn btn-primary">Height</button>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#widthBtn').click(function () {
+            console.log("width : " + $('#box').width());//content width
+            console.log("innerWidth : " + $('#box').innerWidth());//content + padding width
+            console.log("outerWidth : " + $('#box').outerWidth());//content + padding + border width
+            console.log("outerWidth(true) : " + $('#box').outerWidth(true));//content + padding + border + margin width
+        })
+        $('#heightBtn').click(function () {
+            console.log("Height : " + $('#box').height());//content width
+            console.log("innerHeight : " + $('#box').innerHeight());//content + padding width
+            console.log("outerHeight : " + $('#box').outerHeight());//content + padding + border width
+            console.log("outerHeight(true) : " + $('#box').outerHeight(true));//content + padding + border + margin width
+        })
+    });
+</script>
+</body>
+</html>
