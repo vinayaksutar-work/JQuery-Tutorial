@@ -22,7 +22,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('#box').on({
+        $('#box').on({ //using on function call multiple events in single funtion 
             'click' : function(){
                 $(this).css('background', 'orange');
             },
@@ -34,7 +34,7 @@
             }
         });
         $('button').click(function(){
-            $('#box').off('click mouseover');
+            $('#box').off('click mouseover');//off events using off function
         })
     });
 </script>

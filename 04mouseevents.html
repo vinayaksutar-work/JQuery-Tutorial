@@ -22,20 +22,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('#box').click(function () {
+        $('#box').click(function () { //when click event occured
             $('#box').css('background-color', 'skyblue');
         })
-        $('#box').dblclick(function () {
+        $('#box').dblclick(function () { //when double click event occured
             $('#box').css('background-color', 'orange');
         })
-        $('#box').contextmenu(function () {
-            $('#box').css('background-color', 'red'); //contextmenu - right click
+        $('#box').contextmenu(function () { //when right click event occured
+            $('#box').css('background-color', 'red'); 
         })
-        $('#box').mouseenter(function () {
-            $('#box').css('background-color', 'tan'); //mouseenter - mouse on box
+        $('#box').mouseenter(function () { //when mouseenter event occured
+            $('#box').css('background-color', 'tan');
         })
-        $('#box').mouseleave(function () {
-            $('#box').css('background-color', 'purple'); //mouseenter - mouse leave out on box
+        $('#box').mouseleave(function () { //when mouseleave event occured
+            $('#box').css('background-color', 'purple');
         })
     });
 </script>

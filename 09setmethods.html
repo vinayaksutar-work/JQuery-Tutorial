@@ -27,12 +27,12 @@
 <script>
     $(document).ready(function () {
         $('#clickbtn').click(function() { 
-            $('#text').text('Text Changed');
-            $('#box p').html('This is <b>new</b> text using html');
-            $('#box h2').attr('class', 'text-danger');
+            $('#text').text('Text Changed');//changed the text id inner text
+            $('#box p').html('This is <b>new</b> text using html');//change the paragraph html with new html
+            $('#box h2').attr('class', 'text-danger');//we can add any attribute using this attr function
         });
         $('#btn').click(function(){
-            $('#name').val('Vinayak Sutar');
+            $('#name').val('Vinayak Sutar');//if we click on the btn show the value
         })
     });
 </script>
