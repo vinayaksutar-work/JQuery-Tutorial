@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<title>ScrollTop & ScrollLeft</title>
+</head>
+<body>
+<div class="container">
+    <h1>ScrollTop & ScrollLeft Method</h1>
+    <button id="scrolltopbtn" class="btn btn-primary">scrollTop</button>
+    <button id="scrollleftbtn" class="btn btn-primary">scrollLeft</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae et omnis nam provident, nulla soluta eum facere
+        atque temporibus tempora. Unde voluptatem asperiores rem expedita architecto pariatur sequi modi corporis vitae ea
+        quis dolorem quisquam id sed, at nesciunt tempora. Labore molestias placeat deserunt eos pariatur optio corporis
+        dolore doloribus eius corrupti libero voluptas, dolores reprehenderit vitae at cupiditate, ex provident officiis?
+        Corporis ipsam laboriosam fugit non, labore cum quos illo eos et eum provident ipsum doloremque dignissimos vitae
+        aliquid assumenda adipisci qui repellat excepturi praesentium veniam incidunt sint sequi? Quae corrupti dolorum
+        voluptates aperiam nemo, cum temporibus incidunt earum consequatur quas porro expedita qui modi minus cupiditate
+        molestiae, provident corporis unde eveniet doloremque optio accusamus in. Et omnis eligendi id autem laboriosam,
+        neque harum exercitationem reprehenderit molestiae? Nihil beatae minima quo deleniti nostrum illo, neque, asperiores
+        alias reiciendis ea ipsum ipsam accusantium! Ut inventore amet, sit iure eum totam dolor alias optio perspiciatis
+        sequi fugiat ad odio eveniet ea debitis fugit aspernatur pariatur cum voluptatum, voluptates, placeat culpa aperiam
+        tenetur. Voluptate sed minus fugit, deserunt ullam eius consectetur voluptas vel modi amet, pariatur tempore quidem,
+        dicta ex alias aperiam excepturi consequatur facere eos! Recusandae, commodi ratione sequi eaque blanditiis nisi
+        esse veniam magni exercitationem aspernatur ipsa inventore unde earum consectetur quam hic ut fugiat, vel maiores.
+        Laudantium maxime fuga repudiandae doloremque, cum atque obcaecati iure quis vel, deserunt voluptatum nisi excepturi
+        dolor aliquid itaque ex consequatur voluptas id enim assumenda at nobis harum minus. Maxime sint numquam officia
+        asperiores, itaque odio accusamus deserunt dolores neque, fuga soluta magnam laboriosam ducimus laborum veniam
+        molestias amet beatae, repudiandae magni repellendus. Optio hic quasi quaerat perferendis mollitia sequi architecto
+        aut quisquam nisi aliquam, facilis et incidunt atque doloribus ipsum facere quia possimus labore laudantium
+        praesentium fugit consequatur magnam laboriosam cum! Accusamus, ab blanditiis. Obcaecati autem, eaque velit error
+        modi iusto eum possimus doloremque enim. Voluptatibus nam voluptate ipsa. Sed eum repellendus commodi sint, cupiditate
+        blanditiis dolore! Dolores repellendus deleniti quisquam, consequuntur maxime doloremque omnis odio inventore nulla
+        id ipsam aperiam asperiores aspernatur nemo commodi dolore, est ea similique assumenda quae quasi numquam
+        dignissimos non. Odio dolores recusandae ex. Itaque non optio quam error magnam explicabo vero nostrum suscipit
+        dignissimos quasi a tenetur assumenda omnis, nam quis accusamus minus repellendus eveniet sit perferendis incidunt,
+        accusantium natus officiis saepe? Obcaecati earum iusto ad corporis, quaerat, impedit consectetur commodi neque quam
+        dolore ducimus deleniti odit iste dignissimos cumque consequuntur distinctio necessitatibus, modi placeat? Culpa
+        voluptatem vero reprehenderit, omnis libero, quidem qui facere provident eius natus asperiores quis impedit maxime,
+        magnam quod? In iusto dolorum maxime, voluptatum quis possimus! Nisi iure architecto illum enim vero quam? Aliquid
+        magnam ipsa, quo nihil qui fugit a quia voluptatum unde recusandae repellendus, praesentium, quibusdam dolores ad
+        harum alias asperiores officiis quae ipsum hic nemo. A maiores similique fugit perferendis accusantium! Hic tempora
+        vitae aspernatur dicta libero quis voluptatem reiciendis blanditiis aliquam nulla reprehenderit velit accusantium
+        autem, sapiente laboriosam ad expedita maxime. Velit repellat sed natus pariatur id distinctio, optio accusamus
+        quod, eos exercitationem impedit. Fugit, consequatur similique vero dolores assumenda unde illum saepe mollitia
+        commodi eum quasi, perspiciatis impedit ratione obcaecati accusantium.</p>
+</div>
+<div id="box"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function(){
+            $('#box').html("");
+            $('#box').append("Top : " + $(window).scrollTop());
+            $('#box').append("Left : " + $(window).scrollLeft());
+        })
+        $('#scrolltopbtn').click(function(){
+            $(window).scrollTop(200);
+        })
+        $('#scrollleftbtn').click(function(){
+            $(window).scrollLeft(200);
+        })
+    });
+</script>
+</body>
+</html>
