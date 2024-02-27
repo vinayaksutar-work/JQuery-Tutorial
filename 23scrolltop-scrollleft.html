@@ -57,8 +57,8 @@
     $(document).ready(function () {
         $(window).scroll(function(){
             $('#box').html("");
-            $('#box').append("Top : " + $(window).scrollTop());
-            $('#box').append("Left : " + $(window).scrollLeft());
+            $('#box').append("Top : " + $(window).scrollTop());//return vertical scrollbar position
+            $('#box').append("Left : " + $(window).scrollLeft());//return horizontal scrollbar position
         })
         $('#scrolltopbtn').click(function(){
             $(window).scrollTop(200);

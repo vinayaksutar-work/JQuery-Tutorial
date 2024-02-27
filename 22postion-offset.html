@@ -26,11 +26,11 @@
     $(document).ready(function () {
         $('#positionBtn').click(function () {
             var x = ($('#box h2').position());
-            console.log("Top : " + x.top + ", Left : " + x.left);
+            console.log("Top : " + x.top + ", Left : " + x.left);//retrieve the current position
         })
         $('#offsetBtn').click(function () {
             var x = ($('#box').offset());
-            $('#box h2').offset({top:100,left:100});
+            $('#box h2').offset({top:100,left:100});//return current offset of first matched element
         })
     });
 </script>
