@@ -6,11 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<title>FadeIn & FadeOut</title>
+<title>slideUp & SlideDown</title>
 </head>
 <body>
     <div class="container m-5">
-        <h1>FadeIn & FadeOut Method</h1>
+        <h1>SlideUp & SlideDown Method</h1>
         <div id="box" class="border border-5 p-3 w-50 h-25 border-dark my-5"> 
             <h2 id="text">Test Box</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis harum unde adipisci nesciunt, est rerum.</p>
@@ -26,13 +26,13 @@
 <script>
     $(document).ready(function () {
         $('#slideupbtn').click(function () {
-            $('#box').slideUp('slow');//used to slideup
+            $('#box').slideUp('slow');//used to slideup an element
         })
         $('#slidedownbtn').click(function () {
-            $('#box').slideDown('fast');//used to slidedown
+            $('#box').slideDown('fast');//used to slidedown and element
         })
         $('#slidetogglebtn').click(function () {
-            $('#box').slideToggle(2000);//used to slideup & slidedown using toggle
+            $('#box').slideToggle(2000);//used to slideup & slidedown
         })
     });
 </script>
