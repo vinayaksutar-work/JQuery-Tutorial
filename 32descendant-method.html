@@ -21,7 +21,7 @@
         background-color: darkgray;
     }
 </style>
-<title>Ancestores Methods</title>
+<title>Descendant Methods</title>
 </head>
 <body>
 <div class="container my-5 ">
@@ -31,9 +31,9 @@
             <h2>Outer</h2>
             <div id="inner" class="border border-5 border-dark p-4 d-flex ">
                 <h2 id="child-head">Inner</h2>
-                <div class="border border-5 border-dark p-3 m-2 child ">A</div>
-                <div class="border border-5 border-dark p-3 m-2 child ">B</div>
-                <div id="child-c" class="border border-5 border-dark p-3 m-2 child ">C</div>
+                <div class="border border-5 border-dark p-3 m-2 ">A</div>
+                <div class="border border-5 border-dark p-3 m-2 ">B</div>
+                <div id="child-c" class="border border-5 border-dark p-3 m-2 ">C</div>
                 <div class="border border-5 border-dark p-3 m-2 child ">D</div>
             </div>
         </div>
@@ -44,16 +44,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('#child-c').parent().css('background', 'red');
-        //apply red color to child-c immediate parent, which is inner
-        // $('#child-c').parents().css('background', 'red');
-        // //apply orange color to child-c all parents
-        // $('#child-c').parentsUntil('#main-outer').css('background', 'red');
-        // //return all ancestors elements betwee child-c and main-outer
-        // $('#child-c').offsetParent().css('background', 'red');
-        // //returns the first positioned parent element
-        // $('#child-c').closest().css('background', 'red');
-        // //returns the first ancestor of the selected element
+        $('#outer').children().css('background', 'red');
+        //returns all direct children of the selected element
+        // $('#inner').children('.child').css('background', 'red');
+        //return children which class is .child
+        //children find only in perticular searching children
+        // $('#outer').find('.child').css('background', 'yellow');
+        //find search in childrent, parent, grandparent also
     });
 </script>
 </body>
