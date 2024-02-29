@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    #main-outer{
+        background-color: skyblue;
+    }
+    #outer{
+        background-color: pink;
+    }
+    #inner{
+        background-color: lightgreen;
+    }
+    .child{
+        background-color: whitesmoke;
+    }
+</style>
+<title>Sibling Methods</title>
+</head>
+<body>
+<div class="container my-5 ">
+    <div id="outer" class="border border-5 border-dark p-4" style="position: relative;">
+        <h2>Outer</h2>
+        <div id="inner" class="border border-5 border-dark p-4 d-flex ">
+            <h2 id="child-head">Inner</h2>
+            <div class="border border-5 border-dark p-3 m-2 child ">A</div>
+            <div class="border border-5 border-dark p-3 m-2 child ">B</div>
+            <div id="child-c" class="border border-5 border-dark p-3 m-2 child ">C</div>
+            <div class="border border-5 border-dark p-3 m-2 child child ">D</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#child-c').siblings('h2').css('background', 'red');
+        //returns all sibling elements of the selected element
+        //$('#child-c').next().css('background', 'red');
+        //returns the next sibling element of the selected element
+        //$('#child-c').prev().css('background', 'red');
+        // returns the previous sibling element of the selected element
+    });
+</script>
+</body>
+</html>
